@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi String Number</title>
+</head>
+<body>
+<script>
+
+    const value1 = parseInt("1")
+    const value2 = 1
+    const sum = value1 + value2
+
+    document.writeln(`<p>${sum}</p>` )
+
+    document.writeln(`<p>${parseInt("1.1")}</p>`); // 1
+    document.writeln(`<p>${parseFloat("1.1")}</p>`); // 1.1
+    document.writeln(`<p>${Number("1.1")}</p>`); // 1.1
+
+    const a = 1
+    const b = 1
+    const total = a.toString() + b.toString()
+    document.writeln(`<p>${total}</p>` )
+
+    document.writeln(`<p>${parseInt("1salah")}</p>`); // NaN
+    document.writeln(`<p>${parseFloat("1.1text")}</p>`); // 1.1
+
+    // Number () tidak akan mentolerir  kesalahan pada data
+    document.writeln(`<p>${Number("1.1ups")}</p>`); // NaN
+    document.writeln(`<p>${Number("1x")}</p>`); // NaN
+    document.writeln(`<p>${Number("bukan number")}</p>`); // NaN
+
+    const first = Number("salah")
+    const totalNumber = first + 100
+
+    document.writeln(`<p>${totalNumber}</p>` )
+
+    document.writeln(`<p>${isNaN(first)}</p>` )
+
+</script>
+</body>
+</html>

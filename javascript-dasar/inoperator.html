@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In Operator</title>
+</head>
+<body>
+<script>
+    const person = {
+        firstName: "Priskilla",
+        lastName: "Josie"
+    }
+    const result = "firstName" in person //true
+    document.writeln(`<p>${result}</p>`)
+
+    const name = {
+        namaAkhir: undefined
+    }
+    const result2 = "namaAkhir" in name //true
+    document.writeln(`<p>${result2}</p>`)
+
+    const nama = [null, "Maharani", null]
+    const nameResult = 0 in nama //true
+    document.writeln(`<p>${nameResult}</p>`)
+
+</script>
+</body>
+</html>

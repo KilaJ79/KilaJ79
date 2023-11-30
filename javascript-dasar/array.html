@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+<script>
+    let arrayKosong = []
+    
+    let nama = ["Yoongi", "Hoseok", "Seokjin", "Namjoon", "Jimin", "Taehyung", "Jungkook"]
+    nama.push("Soobin")
+    nama.push("Yeonjun", "Beomgyu", "Taehyun", "Hueningkai")
+
+    console.table(nama)
+
+    nama[8] = "Taehyun"
+    nama[10] = "Yeonjun"
+
+    console.table(nama)
+    console.info(nama.length)
+    console.info(nama[6])
+
+    nama.push("Jihoon")
+    delete nama[12]
+
+    console.table(nama)
+
+    nama.push("Sunoo")
+
+    console.table(nama)
+    
+</script>
+</body>
+</html>
